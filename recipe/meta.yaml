@@ -10,8 +10,8 @@ package:
 source:
   fn: networkD3_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/networkD3_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/networkD3/networkD3_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/networkD3_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/networkD3/networkD3_{{ version }}.tar.gz
   sha256: 33b82585f1eec6233303ec14033a703d0b17def441c7a0a67bf7e6764c9c9d0b
 
 
