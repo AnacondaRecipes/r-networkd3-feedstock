@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: networkD3_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/networkD3_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/networkD3/networkD3_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: htmltools (>= 0.2.6), jsonlite,
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
